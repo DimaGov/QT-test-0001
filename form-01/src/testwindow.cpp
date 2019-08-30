@@ -45,3 +45,12 @@ void testWindow::pBtn_push_click() {
 
     ui->txtEdit_result->setText(QString::number(result));
 }
+
+// ----------------------------------------------
+// Событие нажатия на кнопку "О программе"
+// ----------------------------------------------
+void testWindow::on_action_triggered() {
+    dialogWindow myDialog(this);
+    myDialog.setModal(true);
+    myDialog.exec();
+}

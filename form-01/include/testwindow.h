@@ -12,6 +12,8 @@
 #include <QMainWindow>
 #include <math.h>
 
+#include "../include/dialogwindow.h"
+
 /// Скорость света [м/с]
 #define SPEED_OF_LIGHT 299792458;
 
@@ -35,6 +37,9 @@ public:
 public slots:
     /// Подпрограмма для события нажатия на кнопку "Рассчитать"
     void pBtn_push_click();
+
+private slots:
+    void on_action_triggered();
 
 private:
     Ui::testWindow *ui;
