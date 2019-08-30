@@ -6,6 +6,8 @@ QT          += core
 CONFIG      += c++11 console
 CONFIG      -= app_bundle
 
+DESTDIR     = ../bin
+
 DEFINES     += QT_DEPRECATED_WARNINGS
 
 SOURCES     += $$files(./src/*.cpp)
