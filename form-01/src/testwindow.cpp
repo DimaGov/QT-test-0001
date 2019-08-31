@@ -43,7 +43,7 @@ void testWindow::pBtn_push_click() {
 
     double result = time / (sqrt(1 - (speed * speed) / (c * c)));
 
-    ui->txtEdit_result->setText(QString::number(result));
+    ui->lineEdit_result->setText(QString::number(result));
 }
 
 // ----------------------------------------------
